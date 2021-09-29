@@ -7,7 +7,7 @@ ocean_image= loadImage("sea.png")
 }
 
 function setup(){
-  createCanvas(1683,900);
+  createCanvas(windowWidth ,windowHeight);
 
   ocean = createSprite(800,400,1600,600)
   ship = createSprite(741,500,20,20)
@@ -15,6 +15,7 @@ function setup(){
   ship.addAnimation("ship movement" , ship_movement)
   ship.scale = 0.5
   ocean.scale=0.9
+  ocean.x = ocean.width/3
 
   ocean.velocityX = -4
   
